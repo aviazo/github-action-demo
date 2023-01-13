@@ -22,7 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
@@ -41,7 +41,7 @@ jobs:
       - name: "HELLO SECRETS"
         run: echo "my secret is ${{ secrets.LIDOR }}"    
       - name: "USE ENVIRONMENT VARIABLE"
-       run: |
+        run: |
           echo "my variable is ${{ vars.MYVAR }}"
           echo "Home: ${HOME}"
           echo "GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}"
