@@ -39,11 +39,11 @@ jobs:
              "body": "This issue was automatically created by the Github actions workflow  **${{ github.workflow }}**. \n\n The commit Hash was: _${{ github.sha }}_." 
              }'  
       - name: "HELLO SECRETS"
-        run: echo "my secret is ${{ secrets.LIDOR }}"    
-      - name: "USE ENVIRONMENT VARIABLE"
+    #    run: echo "my secret is ${{ secrets.LIDOR }}"    
+    #  - name: "USE ENVIRONMENT VARIABLE"
     #   run: |
     #      echo "my variable is ${{ vars.MYVAR }}"
-    #     echo "Home: ${HOME}"
+    #      echo "Home: ${HOME}"
     #      echo "GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}"
     #      echo "GITHUB_ACTIONS: ${GITHUB_ACTIONS}"
     #      echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
