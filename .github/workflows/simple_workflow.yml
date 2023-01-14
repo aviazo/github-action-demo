@@ -42,7 +42,7 @@ jobs:
         run: echo "my secret is ${{ secrets.AVIAZO }}"    
       - name: "USE ENVIRONMENT VARIABLE"
         run: |
-          echo "my variable is ${{ vars.MENV }}"
+          echo "my variable is ${{ vars.ENV }}"
           echo "Home: ${HOME}"
           echo "GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}"
           echo "GITHUB_ACTIONS: ${GITHUB_ACTIONS}"
