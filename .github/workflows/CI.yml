@@ -29,6 +29,7 @@ jobs:
       with:
         node-version: 14.x
         cache: 'npm'
+   
     - name: npm CI and webpacks
       run: 
             npm ci
@@ -37,7 +38,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
            name: webpack-artifact
-           path: path/to/artifact/        
+           path: ./        
 
   Test:
 
